@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator in Modal Window</title>
+</head>
+<body>
+    <div id="container">
+
+        <span class="letter"></span>
+        
+        <div class="container__child">
+
+            <button id="start__button">Открыть калькулятор</button>
+            
+            <div class="dialog__window">
+                <div class="">
+                    <div class="calc__app">
+                        <div class="background__app">
+                            <div>
+                                <button id="close__button">X</button>
+                            </div>
+                            <div class="show__nums">
+                                <h2>0</h2>
+                            </div>
+                            <div class="nums__container">
+                                <button id="num1" class="nums">1</button>
+                                <button id="num2" class="nums">2</button>
+                                <button id="num3" class="nums">3</button>
+                                <button id="num4" class="nums">4</button>
+                                <button id="num5" class="nums">5</button>
+                                <button id="num5" class="nums clear">С</button>
+                                <button id="num6" class="nums">6</button>
+                                <button id="num7" class="nums">7</button>
+                                <button id="num8" class="nums">8</button>
+                                <button id="num9" class="nums">9</button>
+                                <button id="num0" class="nums">0</button>
+                                <button id="num__add" class="nums">&plus;</button>
+                                <button id="num__minus" class="nums">&minus;</button>
+                                <button id="num__multiply" class="nums">&times;</button>
+                                <button id="num__divide" class="nums">&divide;</button>
+                                <button id="num__equally" class="nums equally">=</button>
+                            </div>
+                            <div class="app__description">
+                                <p>powered by Ruslan Nazarov</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+        </div>
+    </div>
+    
+    <script src="calcScript.js"></script>
+    <script src="backScript.js"></script>
+    <script src="modalScript.js"></script>
+</body>
+</html>
