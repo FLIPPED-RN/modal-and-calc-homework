@@ -10,6 +10,7 @@ function createLetter() {
     //подключаем рандомайзер 
     letterElement.textContent = randomLetter;
     letterElement.classList.add("letter");
+    letterElement.style.color = getRandomColor();
 
     const container = document.getElementById("container");
     container.appendChild(letterElement);
@@ -26,6 +27,15 @@ function createLetter() {
             container.removeChild(letterElement);
         }, 1000)
     }, 2000);
+}
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
 
 setInterval(createLetter, 50) 

@@ -45,7 +45,7 @@
 }
 
 #start__button:hover{
-    border: 1px solid transparent; /* Прозрачная граница */
+    border: 1px solid transparent;
     transition: border-color 0.3s ease, box-shadow 0.3s ease-in-out;
     box-shadow: 0 0 60px 20px rgba(255, 255, 255, 0.2);
 }
@@ -126,5 +126,7 @@
     background-color: white;
     padding: 20px 20px 40px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(to bottom right, #ff9999, #66ccff);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
+    backdrop-filter: blur(10px);
 }
